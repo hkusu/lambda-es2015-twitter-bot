@@ -11,7 +11,7 @@ npm install
 
 Get the keys of the twitter application in [https://apps.twitter.com](https://apps.twitter.com).
 
-> Permission, please choose "Read and Write"
+> Permission, please choose `Read and Write`.
 
 Set the keys to the following file.
 
@@ -44,10 +44,10 @@ npm run build
 
 Upload the generated index.zip in the console of the AWS Lambda.
 
-## Set of AWS Lambda
+## Setting of AWS Lambda
 
 ![screen shot](./screenshot.png)
 
-> Role, does not require special permissions
+> Role, does not require special permissions.
 
-Triggers, select the CloudWatch Events (Schedule).
+Triggers, select the `CloudWatch Events(Schedule)`.

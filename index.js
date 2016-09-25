@@ -1,5 +1,5 @@
-const app = require('./dist/app')
+const main = require('./dist/main')
 
 module.exports.handler = (event, context, callback) => {
-  app(event, context, callback)
+  main(event, context, callback)
 }

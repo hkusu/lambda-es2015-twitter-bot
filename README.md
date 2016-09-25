@@ -9,13 +9,13 @@ git clone https://github.com/hkusu/lambda-es2015-twitter-bot
 npm install
 ```
 
-Get the keys of the twitter application in [https://apps.twitter.com](https://apps.twitter.com).
+Get the keys of your twitter application in [https://apps.twitter.com](https://apps.twitter.com).
 
 > Permission, please choose `Read and Write`.
 
-Set the keys to the following file.
+Set the keys to the `Twitter.js`.
 
-```javascript:Twitter.js
+```Twitter.js
 ...
 
 twit = new Twit({

@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./src/*; exit 0",
     "build": "npm run babel && npm run zip",
-    "babel": "NODE_ENV=production babel ./src/ -d ./dist/",
+    "babel": "babel ./src/ -d ./dist/",
     "zip": "zip -r ./index.zip ./index.js ./dist/ ./node_modules/"
   },
   "devDependencies": {

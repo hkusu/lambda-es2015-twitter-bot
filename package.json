@@ -1,5 +1,5 @@
 {
-  "name": "lambda",
+  "name": "lambda-es2015-twitter-bot",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",

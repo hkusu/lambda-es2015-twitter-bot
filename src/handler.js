@@ -1,7 +1,7 @@
 import moment from 'moment'
 import Twitter from './Twitter'
 
-const main = (event, context, callback) => {
+const handler = (event, context, callback) => {
   const twitter = new Twitter()
   const message = moment().utc().add(9, 'h').format('ただいま MM月DD日 HH時mm分です。') // 現在時間(日本)
 
@@ -15,4 +15,5 @@ const main = (event, context, callback) => {
     })
 }
 
-module.exports = main
+// export with CommonJS style
+module.exports = handler

@@ -1,5 +1,2 @@
-const main = require('./dist/main')
-
-module.exports.handler = (event, context, callback) => {
-  main(event, context, callback)
-}
+// Re-export with CommonJS style for AWS Lambda
+module.exports.handler = require('./dist/handler')

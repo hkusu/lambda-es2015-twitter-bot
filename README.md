@@ -42,7 +42,7 @@ npm run lint
 npm run build
 ```
 
-Upload the generated index.zip in the console of the AWS Lambda.
+Upload the generated app.zip in the console of the AWS Lambda.
 
 ## Setting of AWS Lambda
 

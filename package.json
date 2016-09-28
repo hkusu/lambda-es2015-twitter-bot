@@ -7,7 +7,7 @@
     "lint": "eslint ./src/*; exit 0",
     "build": "npm run babel && npm run zip",
     "babel": "babel ./src/ -d ./dist/",
-    "zip": "zip -r ./index.zip ./index.js ./dist/ ./node_modules/"
+    "zip": "zip -r ./app.zip ./index.js ./dist/ ./node_modules/"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

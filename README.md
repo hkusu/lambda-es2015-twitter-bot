@@ -4,6 +4,10 @@ This is an example to create an AWS Lambda application with Babel-based ES2015. 
 
 > Using [livedoor Weather Hacks](http://weather.livedoor.com/weather_hacks/).
 
+## Demo
+
+[@hamaWeather](https://twitter.com/hamaWeather)
+
 ![screen shot](./screenshot0.png)
 
 ## Installation

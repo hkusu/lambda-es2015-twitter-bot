@@ -40,7 +40,7 @@ Upload the created app.zip in the console of the AWS Lambda.
 
 ![screen shot](./screenshot1.png)
 
-### Settings in the AWS lambda
+## Settings in the AWS lambda
 
 ![screen shot](./screenshot2.png)
 

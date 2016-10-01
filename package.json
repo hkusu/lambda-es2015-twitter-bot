@@ -1,7 +1,7 @@
 {
   "name": "lambda-es2015-twitter-bot",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.0",
+  "description": "This is an example to create an AWS Lambda application with Babel-based ES2015",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src/*; exit 0",
@@ -11,6 +11,17 @@
     "build:zip": "zip -r ./app.zip ./index.js ./dist/ ./node_modules/",
     "build": "npm run build:babel && npm run build:zip"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkusu/lambda-es2015-twitter-bot.git"
+  },
+  "keywords": [],
+  "author": "hkusu <kusu0806@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hkusu/lambda-es2015-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/hkusu/lambda-es2015-twitter-bot#readme",
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-eslint": "^6.1.2",

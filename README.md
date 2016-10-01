@@ -21,7 +21,7 @@ Set the keys to the `.env` file.
     ACCESS_TOKEN_SECRET = your access token secret
     CITY = 130010
 
-> `CITY` code, find from [http://weather.livedoor.com/forecast/rss/primary_area.xml](primary_area.xml).
+> `CITY` code, find from [primary_area.xml](http://weather.livedoor.com/forecast/rss/primary_area.xml).
 
 ## Usage
 

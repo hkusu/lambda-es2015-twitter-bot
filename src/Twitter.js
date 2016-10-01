@@ -10,7 +10,7 @@ class Twitter {
 
   tweet(message) {
     return new Promise((resolve, reject) => {
-      this.twit.post('statuses/update', { status: message }, (err) => {
+      this.twit.post('statuses/update', { status: message }, err => {
         if (err) {
           reject(err)
         } else {

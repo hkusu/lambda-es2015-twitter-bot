@@ -1,6 +1,8 @@
 # lambda-es2015-twitter-bot
 
-This is an example to create an AWS Lambda application with Babel-based ES2015. This application simply tweet the current weather (Tokyo).
+This is an example to create an AWS Lambda application with Babel-based ES2015. This application simply tweet the current weather.
+
+> Using [livedoor Weather Hacks](http://weather.livedoor.com/weather_hacks/).
 
 ## Installation
 
@@ -17,6 +19,9 @@ Set the keys to the `.env` file.
     CONSUMER_SECRET = your consumer secret
     ACCESS_TOKEN = your access token
     ACCESS_TOKEN_SECRET = your access token secret
+    CITY = 130010
+
+> `CITY` code, find from http://weather.livedoor.com/forecast/rss/primary_area.xml
 
 ## Usage
 

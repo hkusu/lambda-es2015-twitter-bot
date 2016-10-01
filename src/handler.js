@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
-import moment from 'moment'
+import axios from 'axios'
 import Twitter from './Twitter'
 
 // read configuration from .env file
@@ -7,14 +7,11 @@ dotenv.config()
 
 export default (event, context, callback) => {
   const twitter = new Twitter()
-  const message = moment().utc().add(9, 'h').format('ただいま MM月DD日 HH時mm分です。') // 現在時間(日本)
 
-  // 現在時間をツイートして終了
-  twitter.tweet(message)
-    .then(() => {
-      callback(null, 'success')
-    })
-    .catch((err) => {
-      callback(err)
-    })
+  // tweet Tokyo weather
+  axios.get(`http://weather.livedoor.com/forecast/webservice/json/v1?city=${process.env.CITY}`) // livedoor Weather Hacks
+    .then(res => res.data.description.text.substr(0, 140)) // get description(140 characters)
+    .then(message => twitter.tweet(message)) // tweet
+    .then(() => callback(null, 'success'))
+    .catch(err => callback(err))
 }

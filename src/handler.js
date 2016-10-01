@@ -1,5 +1,9 @@
+import dotenv from 'dotenv'
 import moment from 'moment'
 import Twitter from './Twitter'
+
+// read configuration from .env file
+dotenv.config()
 
 export default (event, context, callback) => {
   const twitter = new Twitter()

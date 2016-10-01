@@ -23,6 +23,7 @@
     "eslint-plugin-react": "^6.0.0"
   },
   "dependencies": {
+    "dotenv": "^2.0.0",
     "moment": "^2.15.1",
     "twit": "^2.2.5"
   }

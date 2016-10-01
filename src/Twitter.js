@@ -2,10 +2,10 @@ import Twit from 'twit'
 
 class Twitter {
   twit = new Twit({
-    consumer_key: 'your consumer key',
-    consumer_secret: 'your consumer secret',
-    access_token: 'your access token',
-    access_token_secret: 'your access token secret',
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token: process.env.ACCESS_TOKEN,
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET,
   })
 
   tweet(message) {

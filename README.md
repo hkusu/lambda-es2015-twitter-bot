@@ -41,7 +41,7 @@ Set the keys to the `.env` file.
 
 ### run the application in the local environment
 
-    npm run localRun
+    npm run local-run
 
 ### create an archive
 

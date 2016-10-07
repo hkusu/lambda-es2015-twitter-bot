@@ -5,14 +5,12 @@ class Weather {
   axios = axios
 
   async get(city) {
-    const res = await this.httpGet(`city=${city}`)
-    return res
+    return this.httpGet(`city=${city}`)
   }
 
   /** @private */
   async httpGet(query) {
-    const res = await this.axios.get(`${Weather.API_URL}?${query}`)
-    return res
+    return this.axios.get(`${Weather.API_URL}?${query}`)
   }
 }
 

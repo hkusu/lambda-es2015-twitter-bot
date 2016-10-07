@@ -8,7 +8,7 @@ class Twitter {
     access_token_secret: process.env.ACCESS_TOKEN_SECRET,
   })
 
-  tweet(message) {
+  async tweet(message) {
     return new Promise((resolve, reject) => {
       this.twit.post('statuses/update', { status: message }, err => {
         if (err) {

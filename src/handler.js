@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
-import axios from 'axios'
 import moment from 'moment'
+import Weather from './Weather'
 import Twitter from './Twitter'
 
 dotenv.config() // read configuration from .env file
@@ -11,13 +11,14 @@ export default (event, context, callback) => {
     city = process.env.CITY // city in .env file
   }
 
+  const weather = new Weather()
   const twitter = new Twitter()
   const currentTimeStr = moment().utc().add(9, 'h').format('《MM月DD日 HH時mm分》') // current time (Japan)
 
   const run = async () => {
-    const res = await axios.get(`http://weather.livedoor.com/forecast/webservice/json/v1?city=${city}`) // livedoor Weather Hacks
+    const weatherData = await weather.get(city)
 
-    let message = currentTimeStr + res.data.description.text
+    let message = currentTimeStr + weatherData.data.description.text
     message = message.replace(/\r?\n/g, '') // remove return code
     message = message.replace(/ /g, '') // remove space
     message = message.substr(0, 140) // 140 characters from the head (limited by Twitter)

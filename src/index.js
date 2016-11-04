@@ -1,3 +1,4 @@
+/* eslint import/prefer-default-export: "off" */
 import dotenv from 'dotenv'
 import moment from 'moment'
 import Weather from './Weather'
@@ -5,7 +6,7 @@ import Twitter from './Twitter'
 
 dotenv.config() // read configuration from .env file
 
-export default (event, context, callback) => {
+export function handler(event, context, callback) {
   let { city } = event // case of via API Gateway
   if (!city) {
     city = process.env.CITY // city in .env file

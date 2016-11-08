@@ -1,8 +1,9 @@
-var index = require('./index')
+var index = require('./dist/index')
 
 var event = {}
-// var event = { city: 140010 }
+
 var context = {}
+
 var callback = function (err, result) {
   if (err) {
     console.log(err.message)
